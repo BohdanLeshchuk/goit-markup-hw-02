@@ -9,25 +9,26 @@
   --picture-description-font-weight: 400;
 }
 
+/* .button {cursor: pointer;} */
+
 .content {
-  
-  width: 1170px;
+  max. width: 1600px;
   margin: 0 auto;
-  /* padding-right: 215px;
-  padding-left: 215px; */
+  /* padding: auto; */
+
   }
 
 /* -------Header------- */
 .header {
+  /* width: 1170px; */
+  border: 1px solid #ECECEC;
   display: flex;
   align-items: center;
-  margin-bottom: 100px;
+  margin-right: 0px;
+  margin-bottom: 94px;
   background-color: #FFFFFF;
-
-height: 80px;
-left: 0px;
-top: 0px;
 }
+
 
 .menu {
   display: flex;
@@ -42,7 +43,7 @@ top: 0px;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
   color: #212121;
   text-decoration: none;
@@ -53,13 +54,14 @@ top: 0px;
   display: flex;
   margin-left: 93px;
   gap: 50px;
-  padding-left: 0;
+  padding-left: 0px;
+  
 
   font-family: "Roboto";
   font-style: normal;
   font-weight: var(--menu-list-font-weight);
   font-size: var(--menu-list-font-size);
-  line-height: 16px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
 }
 .menu-link {
@@ -68,9 +70,8 @@ top: 0px;
   
 }
 
-.menu-item {
-  
-}
+.menu-link:hover {color: #2196F3;}
+
 
 .contact-list {
   list-style: none;
@@ -79,22 +80,24 @@ top: 0px;
 
   padding-left: 0;
   gap: 50px;
-
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
 }
 
-.contact-link {
+.contact-link{
   text-decoration: none;
   color: #757575;
 }
 
-.contact-item {
-  padding-right: 0%;}
+.contact-link:hover,
+.contact-link:focus
+ {
+  color: #2196F3;
+}
 
 /* End Header */
 
@@ -104,22 +107,150 @@ top: 0px;
   display: flex;
   justify-content: center;
   padding: 0;
+  margin: 0px;
 }
+
 
 .buttons-filtre {
   list-style: none;
   margin-right: 8px;
 
-    height: 38px;  
     background: #F5F4FA;
     border-radius: 4px;
-    font-family: "Roboto";
+}
+
+.navi-button {
+  padding: 6px 22px;
+  border: none;
+  
+
+  font-family: "Roboto";
     font-style: normal;
     font-weight: var(--filtre-list-font-weight);
     font-size: var(--filtre-list-font-size);
-    line-height: 26px;
-  
+    line-height: 1.6;
     text-align: center;
-    letter-spacing: 0.03em;  
+    letter-spacing: 0.03em;
     color: #212121;
+
+    cursor: pointer;
+    
+}
+
+.filtre {margin-bottom: 50px;}
+
+.navi-button:hover,
+.navi-button:focus {
+  background: #2196f3;
+  color: #FFFFFF;
+}
+
+
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;  
+list-style: none;
+gap: 30px;
+}
+
+.project-picture :first-child {
+  margin-left: 0px;
+}
+/* .project-picture {margin-right: 30px;} */
+
+.project-list :last-child {margin-right: 0px;}
+
+
+.picture-title {font-family: 'Roboto';
+  font-style: normal;
+  font-weight: var(--picture-title-font-weight);
+  font-size: var(--picture-title-font-size);
+  line-height: 2;
+  letter-spacing: 0.06em;
+padding-left: 24px;
+}
+
+.picture-description {
+  font-family: 'Roboto';
+    font-style: normal;
+    font-weight: var(--picture-description-font-weight);
+    font-size: var(--picture-description-font-size);
+    line-height: 1.8;  
+    letter-spacing: 0.03em;
+padding-left: 24px;
+    color: #757575;
+}
+
+.project-picture {
+  border: 1px solid #ECECEC;
+}
+
+
+
+
+/* -------Footer------- */
+
+.footer {
+  padding: 60px 0 60px 0;
+  display: block;
+  background-color: #2F303A;
+}
+
+.footer-logo-blue {
+  color: #2196f3;
+}
+
+.footer-logo {
+  /* display: block; */
+  /* padding-top: 60px; */
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  text-decoration: none;
+  
+}
+
+.map-adress {
+  list-style: none;
+  color: #FFFFFF;
+
+}
+
+.map-adress :hover,
+.map-adress :focus
+{}
+
+.map-adress-list {
+  padding-left: 0px;
+}
+
+.footer-contact-list {
+  list-style: none;
+  padding-left: 0px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin: 0px;
+}
+
+.footer-contact-list :first-child {margin: 0 0 9px 0;}
+.footer-contact-list :last-child {margin: 0%;}
+
+.footer-contact-link {
+  list-style: none;
+  color: #rgba(255, 255, 255, 0.6);
+}
+
+.footer-contact-link:hover,
+.footer-contact-link:focus {
+  color: #2196F3;
 }
