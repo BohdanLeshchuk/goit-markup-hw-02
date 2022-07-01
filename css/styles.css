@@ -9,26 +9,23 @@
   --picture-description-font-weight: 400;
 }
 
-/* .button {cursor: pointer;} */
-
 .content {
-  max. width: 1600px;
+  max-width: 1600px;
   margin: 0 auto;
-  /* padding: auto; */
-
-  }
+  /* justify-content: center; */
+}
 
 /* -------Header------- */
 .header {
-  /* width: 1170px; */
-  border: 1px solid #ECECEC;
+  justify-content: center;
+  border: 1px solid #ececec;
   display: flex;
   align-items: center;
   margin-right: 0px;
+  /* margin-left: 0px; */
   margin-bottom: 94px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
-
 
 .menu {
   display: flex;
@@ -55,7 +52,6 @@
   margin-left: 93px;
   gap: 50px;
   padding-left: 0px;
-  
 
   font-family: "Roboto";
   font-style: normal;
@@ -67,11 +63,11 @@
 .menu-link {
   text-decoration: none;
   color: #212121;
-  
 }
 
-.menu-link:hover {color: #2196F3;}
-
+.menu-link:hover {
+  color: #2196f3;
+}
 
 .contact-list {
   list-style: none;
@@ -88,20 +84,22 @@
   letter-spacing: 0.02em;
 }
 
-.contact-link{
+.contact-link {
   text-decoration: none;
   color: #757575;
 }
 
 .contact-link:hover,
-.contact-link:focus
- {
-  color: #2196F3;
+.contact-link:focus {
+  color: #2196f3;
 }
 
-/* End Header */
-
 /* -------Hero------- */
+
+.main {
+  background-color: #ffffff;
+  width: 1170px;
+}
 
 .filtre-list {
   display: flex;
@@ -110,92 +108,85 @@
   margin: 0px;
 }
 
-
 .buttons-filtre {
   list-style: none;
   margin-right: 8px;
 
-    background: #F5F4FA;
-    border-radius: 4px;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
 .navi-button {
   padding: 6px 22px;
   border: none;
-  
 
   font-family: "Roboto";
-    font-style: normal;
-    font-weight: var(--filtre-list-font-weight);
-    font-size: var(--filtre-list-font-size);
-    line-height: 1.6;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
+  font-style: normal;
+  font-weight: var(--filtre-list-font-weight);
+  font-size: var(--filtre-list-font-size);
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: #212121;
 
-    cursor: pointer;
-    
+  cursor: pointer;
 }
 
-.filtre {margin-bottom: 50px;}
+.filtre {
+  margin-bottom: 50px;
+}
 
 .navi-button:hover,
 .navi-button:focus {
   background: #2196f3;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-
-
 
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  padding: 0px;  
-list-style: none;
-gap: 30px;
+  padding: 0px;
+  list-style: none;
+  /* gap: 30px; */
+  margin-bottom: 94px;
+  margin-top: 0px;
+
 }
 
-.project-picture :first-child {
-  margin-left: 0px;
-}
-/* .project-picture {margin-right: 30px;} */
-
-.project-list :last-child {margin-right: 0px;}
-
-
-.picture-title {font-family: 'Roboto';
+.picture-title {
+  font-family: "Roboto";
   font-style: normal;
   font-weight: var(--picture-title-font-weight);
   font-size: var(--picture-title-font-size);
   line-height: 2;
   letter-spacing: 0.06em;
-padding-left: 24px;
+  padding-left: 24px;
 }
 
 .picture-description {
-  font-family: 'Roboto';
-    font-style: normal;
-    font-weight: var(--picture-description-font-weight);
-    font-size: var(--picture-description-font-size);
-    line-height: 1.8;  
-    letter-spacing: 0.03em;
-padding-left: 24px;
-    color: #757575;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: var(--picture-description-font-weight);
+  font-size: var(--picture-description-font-size);
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  padding-left: 24px;
+  color: #757575;
 }
 
 .project-picture {
-  border: 1px solid #ECECEC;
+  border: 1px solid #ececec;
 }
 
-
-
+.project-image {
+}
 
 /* -------Footer------- */
 
 .footer {
-  padding: 60px 0 60px 0;
+  padding: 60px 0 60px 40px;
   display: block;
-  background-color: #2F303A;
+  background-color: #2f303a;
+  /* width: 1170px; */
 }
 
 .footer-logo-blue {
@@ -211,20 +202,19 @@ padding-left: 24px;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
-  
 }
 
 .map-adress {
   list-style: none;
-  color: #FFFFFF;
-
+  color: #ffffff;
 }
 
 .map-adress :hover,
-.map-adress :focus
-{}
+.map-adress :focus {
+  color: #ffffff;
+}
 
 .map-adress-list {
   padding-left: 0px;
@@ -242,15 +232,24 @@ padding-left: 24px;
   margin: 0px;
 }
 
-.footer-contact-list :first-child {margin: 0 0 9px 0;}
-.footer-contact-list :last-child {margin: 0%;}
+.footer-contact-list :first-child {
+  margin: 0 0 9px 0;
+}
+.footer-contact-list :last-child {
+  margin: 0%;
+}
 
 .footer-contact-link {
+  text-decoration: none;
   list-style: none;
-  color: #rgba(255, 255, 255, 0.6);
+  color: #757575;
 }
 
 .footer-contact-link:hover,
 .footer-contact-link:focus {
-  color: #2196F3;
+  color: #ffffff;
+}
+
+.map-geolocation {
+  text-decoration: none;
 }
