@@ -11,18 +11,18 @@
 
 .content {
   max-width: 1600px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   /* justify-content: center; */
 }
 
 /* -------Header------- */
 .header {
+  /* width: 1170px; */
   justify-content: center;
-  border: 1px solid #ececec;
+  /* border: 1px solid #ececec; */
   display: flex;
   align-items: center;
-  margin-right: 0px;
-  /* margin-left: 0px; */
+  
   margin-bottom: 94px;
   background-color: #ffffff;
 }
@@ -98,7 +98,8 @@
 
 .main {
   background-color: #ffffff;
-  width: 1170px;
+  /* width: 1170px; */
+  /* margin-right: 0px; */
 }
 
 .filtre-list {
@@ -140,13 +141,32 @@
   background: #2196f3;
   color: #ffffff;
 }
+.projects {
+width: 1170px; */
+margin-left: auto;
+margin-right: auto;
+/* padding-left: 15px;
+padding-right: 15px; */
+
+}
+
+
+/* .project-picture {
+  flex-basis: calc((100%-60px)/3);
+} */
+
 
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  padding: 0px;
+width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+
   list-style: none;
-  /* gap: 30px; */
+
+  padding: 0px;
+    gap: 30px;
   margin-bottom: 94px;
   margin-top: 0px;
 
