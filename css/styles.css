@@ -19,10 +19,9 @@
 .header {
   /* width: 1170px; */
   justify-content: center;
-  /* border: 1px solid #ececec; */
+  border: 1px solid #ececec;
   display: flex;
-  align-items: center;
-  
+  align-items: center;  
   margin-bottom: 94px;
   background-color: #ffffff;
 }
@@ -36,6 +35,8 @@
   color: #2196f3;
 }
 .logo {
+  text-decoration: none;
+
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -43,7 +44,7 @@
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: #212121;
-  text-decoration: none;
+  
 }
 
 .menu-list {
@@ -73,8 +74,8 @@
   list-style: none;
   display: flex;
   margin-left: 331px;
-
   padding-left: 0;
+
   gap: 50px;
   font-family: "Roboto";
   font-style: normal;
@@ -98,8 +99,18 @@
 
 .main {
   background-color: #ffffff;
-  /* width: 1170px; */
-  /* margin-right: 0px; */
+}
+
+.conteiner {
+width: 1170px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 94px;
+}
+
+.filtre {
+  /* width: 1200px; */
+  padding-bottom: 50px;
 }
 
 .filtre-list {
@@ -132,22 +143,12 @@
   cursor: pointer;
 }
 
-.filtre {
-  margin-bottom: 50px;
-}
+
 
 .navi-button:hover,
 .navi-button:focus {
   background: #2196f3;
   color: #ffffff;
-}
-.projects {
-width: 1170px; */
-margin-left: auto;
-margin-right: auto;
-/* padding-left: 15px;
-padding-right: 15px; */
-
 }
 
 
@@ -159,45 +160,58 @@ padding-right: 15px; */
 .project-list {
   display: flex;
   flex-wrap: wrap;
-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-
+/* justify-content: center; */
   list-style: none;
-
   padding: 0px;
-    gap: 30px;
-  margin-bottom: 94px;
-  margin-top: 0px;
+  margin: 0px;
 
+
+    gap: 30px;
+}
+
+
+
+.picture-title .picture-description {
+  display: block;
 }
 
 .picture-title {
+padding-left: 24px;
+margin: 20px 0px 0px;
+
   font-family: "Roboto";
   font-style: normal;
   font-weight: var(--picture-title-font-weight);
   font-size: var(--picture-title-font-size);
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-left: 24px;
+  
 }
 
 .picture-description {
+padding-left: 24px;
+margin: 4px 0px 20px ;
+
   font-family: "Roboto";
   font-style: normal;
   font-weight: var(--picture-description-font-weight);
   font-size: var(--picture-description-font-size);
   line-height: 1.8;
-  letter-spacing: 0.03em;
-  padding-left: 24px;
+  letter-spacing: 0.03em;  
   color: #757575;
 }
 
 .project-picture {
-  border: 1px solid #ececec;
+    /* border: 1px solid #ececec; */
+}
+.project-picture :nth-child(3n) {
+  /* margin-right: 0px; */
+
 }
 
+
 .project-image {
+  display: block;
 }
 
 /* -------Footer------- */
@@ -243,13 +257,15 @@ width: 1170px;
 .footer-contact-list {
   list-style: none;
   padding-left: 0px;
+  margin: 0px;
+
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin: 0px;
+ 
 }
 
 .footer-contact-list :first-child {
