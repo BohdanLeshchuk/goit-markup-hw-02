@@ -11,19 +11,23 @@
 
 .content {
   max-width: 1600px;
-  /* margin: 0 auto; */
-  /* justify-content: center; */
 }
 
 /* -------Header------- */
 .header {
-  /* width: 1170px; */
-  justify-content: center;
-  border: 1px solid #ececec;
-  display: flex;
-  align-items: center;  
-  margin-bottom: 94px;
-  background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
+  
+}
+.header-content {
+  width: 1170px;
+  
+  margin-right: auto;
+  margin-left: auto;
+    /* justify-content:center; */
+    
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
 }
 
 .menu {
@@ -36,6 +40,7 @@
 }
 .logo {
   text-decoration: none;
+  /* margin-right: 93px; */
 
   font-family: "Raleway";
   font-style: normal;
@@ -50,8 +55,8 @@
 .menu-list {
   list-style: none;
   display: flex;
-  margin-left: 93px;
-  gap: 50px;
+  /* margin-left: 93px; */
+  /* gap: 50px; */
   padding-left: 0px;
 
   font-family: "Roboto";
@@ -60,7 +65,12 @@
   font-size: var(--menu-list-font-size);
   line-height: 1.2;
   letter-spacing: 0.02em;
+
 }
+/* /.menu-list :first-child {
+  margin-right: 93px;
+} */
+
 .menu-link {
   text-decoration: none;
   color: #212121;
@@ -98,6 +108,7 @@
 /* -------Hero------- */
 
 .main {
+  margin-top: 94px;
   background-color: #ffffff;
 }
 
@@ -109,7 +120,6 @@ margin-bottom: 94px;
 }
 
 .filtre {
-  /* width: 1200px; */
   padding-bottom: 50px;
 }
 
@@ -152,32 +162,29 @@ margin-bottom: 94px;
 }
 
 
-/* .project-picture {
-  flex-basis: calc((100%-60px)/3);
-} */
+
 
 
 .project-list {
   display: flex;
   flex-wrap: wrap;
-/* justify-content: center; */
   list-style: none;
   padding: 0px;
   margin: 0px;
-
-
-    gap: 30px;
+  gap: 30px;
 }
 
 
 
-.picture-title .picture-description {
+.picture-title, 
+.picture-description,
+.project-image {
   display: block;
 }
 
 .picture-title {
-padding-left: 24px;
-margin: 20px 0px 0px;
+  padding: 20px 0px 0px 24px;
+margin: 0px;
 
   font-family: "Roboto";
   font-style: normal;
@@ -189,8 +196,8 @@ margin: 20px 0px 0px;
 }
 
 .picture-description {
-padding-left: 24px;
-margin: 4px 0px 20px ;
+padding: 4px 0px 20px 24px;
+margin: 0px;
 
   font-family: "Roboto";
   font-style: normal;
@@ -201,26 +208,29 @@ margin: 4px 0px 20px ;
   color: #757575;
 }
 
-.project-picture {
-    /* border: 1px solid #ececec; */
-}
-.project-picture :nth-child(3n) {
-  /* margin-right: 0px; */
-
+.border {
+  border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
 }
 
+/* .project-picture :nth-child(3n) {
+  margin-right: 0px;
 
-.project-image {
-  display: block;
-}
+} */
+
 
 /* -------Footer------- */
 
 .footer {
-  padding: 60px 0 60px 40px;
-  display: block;
   background-color: #2f303a;
-  /* width: 1170px; */
+}
+
+.footer-content {
+width: 1170px;
+margin-left: auto;
+margin-right: auto;
+padding: 60px 0 60px;
 }
 
 .footer-logo-blue {
@@ -228,8 +238,6 @@ margin: 4px 0px 20px ;
 }
 
 .footer-logo {
-  /* display: block; */
-  /* padding-top: 60px; */
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
