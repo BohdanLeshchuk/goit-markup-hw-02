@@ -1,0 +1,285 @@
+:root {
+    --menu-list-font-size: 14px;
+    --menu-list-font-weight: 500;
+    --picture-title-font-size: 16px;
+    --picture-title-font-weight: 500;
+    --picture-description-font-size: 16px;
+    --picture-description-font-weight: 400;
+}
+
+
+
+
+.content {
+    max-width: 1600px;
+}
+
+/* -------Header------- */
+.header {
+    border-bottom: 1px solid #ececec;
+
+}
+
+.header-content {
+    width: 1170px;
+    height: 80px;
+
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.logo-blue {
+    color: #2196f3;
+}
+
+.logo {
+    text-decoration: none;
+    margin-right: 93px;
+
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #212121;
+
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: var(--menu-list-font-weight);
+    font-size: var(--menu-list-font-size);
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+}
+
+.menu-item {
+    margin: 0px 50px 0px 0px;
+}
+
+.menu-list :last-child {
+    margin-right: 0px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #212121;
+}
+
+.menu-link:hover {
+    color: #2196f3;
+}
+
+.header-contact {
+    margin-left: 331px;
+}
+
+.contact-list {
+    list-style: none;
+    display: flex;
+
+    padding-left: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.contact-item {
+    margin-right: 50px;
+}
+
+.contact-list :last-child {
+    margin-right: 0px;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #757575;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: #2196f3;
+}
+
+
+/* -------Hero------- */
+
+
+.hero {
+    background-color: #2F303A;
+    padding: 200px 0px;
+}
+
+.hero-diccription {
+    margin: 0px auto;
+    width: 696px;
+    padding-bottom: 30px;
+    
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+
+    
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+    
+    
+}
+.main-content {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.hero-button {
+margin: 0 auto;
+
+display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;  
+    color: #FFFFFF;
+
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+
+
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+
+        cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background: #ffffff;
+    color: #212121;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------Footer------- */
+
+.footer {
+    background-color: #2f303a;
+}
+
+.footer-content {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px 0 60px;
+}
+
+.footer-logo-blue {
+    color: #2196f3;
+}
+
+.footer-logo {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.map-adress {
+    list-style: none;
+    color: #ffffff;
+}
+
+.map-adress :hover,
+.map-adress :focus {
+    color: #ffffff;
+}
+
+.map-adress-list {
+    padding-left: 0px;
+}
+
+.footer-contact-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+}
+
+.footer-contact-list :first-child {
+    margin: 0 0 9px 0;
+}
+
+.footer-contact-list :last-child {
+    margin: 0%;
+}
+
+.footer-contact-link {
+    text-decoration: none;
+    list-style: none;
+    color: #757575;
+}
+
+.footer-contact-link:hover,
+.footer-contact-link:focus {
+    color: #ffffff;
+}
+
+.map-geolocation {
+    text-decoration: none;
+}

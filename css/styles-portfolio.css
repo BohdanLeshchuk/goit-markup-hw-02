@@ -20,10 +20,11 @@
 }
 .header-content {
   width: 1170px;
+  height: 80px;
   
   margin-right: auto;
   margin-left: auto;
-    /* justify-content:center; */
+    justify-content:center;
     
     display: flex;
     align-items: center;
@@ -40,7 +41,7 @@
 }
 .logo {
   text-decoration: none;
-  /* margin-right: 93px; */
+  margin-right: 93px;
 
   font-family: "Raleway";
   font-style: normal;
@@ -55,9 +56,9 @@
 .menu-list {
   list-style: none;
   display: flex;
-  /* margin-left: 93px; */
-  /* gap: 50px; */
   padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 
   font-family: "Roboto";
   font-style: normal;
@@ -67,9 +68,13 @@
   letter-spacing: 0.02em;
 
 }
-/* /.menu-list :first-child {
-  margin-right: 93px;
-} */
+
+.menu-item {
+   margin: 0px 50px 0px 0px;
+}
+.menu-list :last-child {
+  margin-right: 0px;
+}
 
 .menu-link {
   text-decoration: none;
@@ -80,19 +85,32 @@
   color: #2196f3;
 }
 
+.header-contact {
+  margin-left: 331px;
+}
+
 .contact-list {
   list-style: none;
   display: flex;
-  margin-left: 331px;
+ 
   padding-left: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
 
-  gap: 50px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+}
+
+.contact-item {
+  margin-right: 50px;
+}
+
+.contact-list :last-child {
+  margin-right: 0px;
 }
 
 .contact-link {
