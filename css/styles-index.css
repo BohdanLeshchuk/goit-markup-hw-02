@@ -133,6 +133,11 @@
 /* -------Hero------- */
 
 
+.main {
+    background-color: #FFFFFF;
+}
+
+
 .hero {
     background-color: #2F303A;
     padding: 200px 0px;
@@ -261,7 +266,8 @@ margin-top: 0px;
 
 .product {
  width: 1170px;  
- margin: 0 auto; 
+ margin: 0 auto;
+ padding-bottom: 94px;
 }
 
 .product-title {
@@ -291,7 +297,85 @@ margin-top: 0px;
 .product-picture {
     list-style: none;
     margin-right: 30px;
+    margin-bottom: 0px;
 }
+
+
+.team {
+    background-color: #F5F4FA;
+}
+
+.team-menu {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 94px 0px;
+}
+
+.team-title {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 54px;
+
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+    
+        color: #212121;
+}
+
+.team-list {
+    margin: 0 auto;
+    padding: 0px;
+    display: flex;
+    gap: 30px;
+}
+
+.team-list-piture {
+    margin: 0px;
+    list-style: none;
+    gap: 30px;
+    padding-bottom: 30px;
+    background-color: #FFFFFF;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.picture-title {
+    margin: 0px;
+    padding-top: 30px;
+    text-align: center;
+
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: var(--picture-title-font-weight);
+        font-size: var(--picture-title-font-size);
+        line-height: 1.9;
+        letter-spacing: 0.03em;
+    
+        color: #212121;
+}
+
+
+.picture-discription {
+    margin: 0px;
+    padding-top: 10px;
+    text-align: center;
+
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: var(--picture-description-font-weight);
+        font-size: var(--picture-description-font-size);
+        line-height: 1.9;
+        letter-spacing: 0.03em;
+    
+        color: #757575;
+}
+
+
 
 
 
@@ -375,4 +459,13 @@ margin-top: 0px;
 
 .map-geolocation {
     text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+
 }
